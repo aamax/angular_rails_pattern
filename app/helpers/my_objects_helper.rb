@@ -1,0 +1,2 @@
+module MyObjectsHelper
+end
