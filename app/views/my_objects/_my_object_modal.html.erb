@@ -1,0 +1,22 @@
+<div ng-controller='MyObjectModalCtrl'>
+  <div id="my_object_modal_section">
+
+    <div class="edit_my_object_modal modal hide fade" id="editMyObjectModal">
+      <div class='modal-header'>
+        <h1>My Object Editor</h1>
+      </div>
+      <div class="modal-body">
+        {{ setupMyObject(true) }}
+        <strong>Name:</strong>
+        <input type="text" ng-model="myObject.name" placeholder="Name" class='name_edit' required ng-disabled='showForm'/> <br/>
+        <strong>Description:</strong>
+        <input type="text" ng-model="myObject.description" placeholder="Description" class='description_edit' required ng-disabled='showForm'/> <br/>
+
+        <hr/>
+        <button type="button" class="btn btn-small btn-warning" ng-click="dismiss('cancel')">Cancel</button>
+        <button class="btn btn-small btn-success" ng-click="dismiss('ok')" ng-disabled='showForm' >Save
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

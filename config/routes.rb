@@ -1,5 +1,5 @@
 AngularRails::Application.routes.draw do
-  get "my_objects/index"
+  resources :my_objects
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
